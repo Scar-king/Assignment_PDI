@@ -1,0 +1,13 @@
+923
+524
+234
+87
+482
+915
+615
+531
+860
+885
+
+The Biggest number is 923
+The smallest number is 0
