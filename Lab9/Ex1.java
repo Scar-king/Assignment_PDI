@@ -16,7 +16,7 @@ public class Ex1 {
             int max = 0;
             int min = 0;
 
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 1000; i++) {
                 int numbers = random.nextInt(1000);
                 writer.write(numbers + "\n");
 
@@ -34,12 +34,13 @@ public class Ex1 {
             writer.close();
 
             System.out.println("Program terminates!");
+            System.out.println("Read from file: ");
 
             BufferedReader br = new BufferedReader(new FileReader("D:\\Java\\JavaForPDI\\IO\\Assignment\\LuckyNumber.txt"));
 
             String line;
             while((line = br.readLine()) != null){
-                System.out.println(line);
+                System.out.print(line + " ");
             }
             br.close();
         } catch (IOException e) {

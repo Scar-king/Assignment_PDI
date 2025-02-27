@@ -66,7 +66,6 @@ public class Ex4 {
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(fileName));
             // bw.write("ID,NAME,MAJOR\n");
-            bw.write("\t\nNew Updated\n\n");
             for (Student student : students) {
                 bw.write(student.toString());
                 bw.newLine();

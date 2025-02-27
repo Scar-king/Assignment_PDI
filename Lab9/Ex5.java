@@ -54,12 +54,6 @@ public class Ex5 {
                 String email = data[3].trim();
                 String salary = data[4].trim();
                 
-                if (id.isEmpty() || name.isEmpty() || ageStr.isEmpty() || email.isEmpty() || salary.isEmpty()) {
-                    logWriter.write("Missing values: " + line);
-                    logWriter.newLine();
-                    continue;
-                }
-                
                 int age;
                 try {
                     age = Integer.parseInt(ageStr);
@@ -70,6 +64,12 @@ public class Ex5 {
                     }
                 } catch (NumberFormatException e) {
                     logWriter.write("Invalid age format: " + line);
+                    logWriter.newLine();
+                    continue;
+                }
+
+                if (id.isEmpty() || name.isEmpty() || ageStr.isEmpty() || email.isEmpty() || salary.isEmpty()) {
+                    logWriter.write("Missing values: " + line);
                     logWriter.newLine();
                     continue;
                 }

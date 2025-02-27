@@ -26,6 +26,7 @@ public class Ex3 {
     public static void main(String[] args) {
         List<Student> students = loadStudentsFromFile(FILE_NAME);
         
+        System.out.println("\tData from ArrayList: \n");
         for (Student student : students) {
             System.out.println(student);
         }

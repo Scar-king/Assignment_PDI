@@ -16,7 +16,7 @@ public class Ex2 {
             String major;
             
             //Header
-            // writer.write("id,name,major\n");
+            writer.write("id,name,major\n");
 
             for(int i = 0; i < 3; i++){
                 System.out.println("\n\n\t*** Getting data for student " + (i + 1));

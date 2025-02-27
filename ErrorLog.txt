@@ -1,5 +1,5 @@
-Missing values: 2,Bob, ,bob@gmail.com,450
-Invalid age (negative): 3,Charlie,-30,david@gmail.com,200
+Invalid age format: 2,Bob, ,bob@gmail.com,450
+Invalid age (negative): 3,Charlie,-30,,200
 Invalid salary format: 4,David,40,david@gmail.com,Invalid
 Invalid salary format: 6,Frank,35,frank@gmail.com,NaN
 Missing values: 7,Henry,39,,900
